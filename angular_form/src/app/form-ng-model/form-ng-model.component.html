@@ -1,1 +1,35 @@
-<p>form-ng-model works!</p>
+<h1>Form 1 with ngModel</h1>
+
+<form>
+
+    <div class="mb-3">
+        <label for="name" class="form-label">Nome</label>
+        <input type="text" name="name" [(ngModel)]="superHero.name" class="form-control" id="name" required>
+    </div>
+
+    <div class="mb-3">
+        <label for="alterEgo" class="form-label">Alter Ego</label>
+        <input type="text" name="alterEgo" [(ngModel)]="superHero.alterEgo" class="form-control" id="alterEgo" required>
+    </div>
+
+    <div class="mb-3">
+        <label for="power" class="form-label">Power</label>
+        <input type="text" name="email" [(ngModel)]="superHero.power" class="form-control" id="power">
+    </div>
+
+    <div class="mb-3">
+        <label for="enemy" class="form-label">Enemy</label>
+        <input type="text" name="email" [(ngModel)]="superHero.enemy" class="form-control" id="enemy">
+    </div>
+
+    <div class="mb-3">
+        <label for="planet" class="form-label">Planet</label>
+        <input type="text" name=" email" [(ngModel)]="superHero.planet" class="form-control" id="planet" required>
+    </div>
+
+    <div class="mb-3">
+        <label for="weakness" class="form-label">Weakness</label>
+        <input type="text" name="email" [(ngModel)]="superHero.weakness" class="form-control" id="weakness">
+    </div>
+    <button type="button" (click)="addSuperHero()" class="btn btn-primary">Submit</button>
+</form>
