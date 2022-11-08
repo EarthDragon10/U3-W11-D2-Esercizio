@@ -21,9 +21,13 @@ export class FormReactiveComponent implements OnInit {
 
   form!: FormGroup;
 
-  constructor() {}
+  constructor(private formBuilder: FormBuilder) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.form = new FormGroup({
+      // name: new FormControl(null, [Validators.required, this])
+    });
+  }
 
   addUserHero() {}
 }
